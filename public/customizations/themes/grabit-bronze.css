@@ -1,0 +1,146 @@
+/**
+ * GRABiT-Labs Bronze Theme
+ * Dark-mode first with Modern Bronze accent
+ * WCAG 2.2 AA compliant
+ * Uses OKLCH color space for perceptual uniformity
+ */
+
+:root {
+  /* Base Colors - Dark Mode */
+  --color-background: #0E0F10;
+  --color-surface: #15181B;
+  --color-border: #2A2F36;
+  --color-text: #E6E8EB;
+  --color-text-muted: #B7BDC6;
+
+  /* Primary - Modern Bronze */
+  --color-primary: #C38E3D;
+  --color-primary-hover: #D39A43;
+  --color-primary-active: #B98236;
+  --color-primary-fg: #0B0C0E;
+
+  /* Links */
+  --color-link: #C38E3D;
+  --color-link-hover: #D39A43;
+
+  /* Focus Ring */
+  --color-focus-ring: #E0AE47;
+
+  /* Semantic Colors */
+  --color-success: #45B07C;
+  --color-warning: #E3A23B;
+  --color-danger: #E26D5A;
+
+  /* OKLCH Variants (for browsers that support it) */
+  --oklch-bg: oklch(0.1677 0.0027 248);
+  --oklch-surface: oklch(0.2071 0.0076 248.2);
+  --oklch-text: oklch(0.9303 0.0046 258.3);
+  --oklch-primary: oklch(0.6833 0.1161 74.9);
+  --oklch-primary-hover: oklch(0.725 0.123 74.9);
+  --oklch-primary-active: oklch(0.648 0.107 74.9);
+  --oklch-border: oklch(0.3032 0.0145 256.8);
+  --oklch-ring: oklch(0.74 0.12 74.9);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-elev1: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-elev2: 0 6px 24px rgba(0, 0, 0, 0.45);
+
+  /* Spacing (optional - Cal.com may have its own) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Dark mode overrides (if Cal.com has light mode toggle) */
+[data-theme="dark"],
+.dark {
+  --color-background: #0E0F10;
+  --color-surface: #15181B;
+  --color-border: #2A2F36;
+  --color-text: #E6E8EB;
+  --color-text-muted: #B7BDC6;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-fg);
+  border-radius: var(--radius-md);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary-active);
+}
+
+/* Focus States */
+*:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Link Styles */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* Input Styles */
+input,
+textarea,
+select {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-md);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-focus-ring);
+}
+
+/* Card/Surface Styles */
+.card,
+.surface {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-elev1);
+}
+
+/* Dividers */
+hr,
+.divider {
+  border-color: var(--color-border);
+}
+
+/* Semantic Backgrounds */
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}

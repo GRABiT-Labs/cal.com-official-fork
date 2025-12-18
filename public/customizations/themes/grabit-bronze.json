@@ -1,0 +1,47 @@
+{
+  "name": "GRABiT-Labs Bronze",
+  "description": "Dark-mode first theme with Modern Bronze accent, WCAG 2.2 compliant",
+  "version": "1.0.0",
+  "colors": {
+    "background": "#0E0F10",
+    "surface": "#15181B",
+    "border": "#2A2F36",
+    "text": "#E6E8EB",
+    "mutedText": "#B7BDC6",
+    "primary": "#C38E3D",
+    "primaryHover": "#D39A43",
+    "primaryActive": "#B98236",
+    "primaryFg": "#0B0C0E",
+    "link": "#C38E3D",
+    "linkHover": "#D39A43",
+    "focusRing": "#E0AE47",
+    "success": "#45B07C",
+    "warning": "#E3A23B",
+    "danger": "#E26D5A"
+  },
+  "oklch": {
+    "background": "oklch(0.1677 0.0027 248)",
+    "surface": "oklch(0.2071 0.0076 248.2)",
+    "text": "oklch(0.9303 0.0046 258.3)",
+    "primary": "oklch(0.6833 0.1161 74.9)",
+    "primaryHover": "oklch(0.725 0.123 74.9)",
+    "primaryActive": "oklch(0.648 0.107 74.9)",
+    "border": "oklch(0.3032 0.0145 256.8)",
+    "focusRing": "oklch(0.74 0.12 74.9)"
+  },
+  "radius": {
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px"
+  },
+  "shadows": {
+    "elev1": "0 2px 10px rgba(0,0,0,0.35)",
+    "elev2": "0 6px 24px rgba(0,0,0,0.45)"
+  },
+  "contrast": {
+    "textOnSurface": "14.52:1",
+    "primaryOnBackground": "6.63:1",
+    "hoverOnBackground": "7.74:1",
+    "wcagCompliance": "AA"
+  }
+}
